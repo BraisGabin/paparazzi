@@ -61,7 +61,10 @@ class KeypadViewTest {
       rotation.start()
 
       // Uncomment once snapshot verification supports videos
-      // paparazzi.gif(root, "spin", start = 500, end = 1500, fps = 30)
+      try {
+        paparazzi.gif(root, "spin", start = 500, end = 1500, fps = 30)
+      } catch (e: Throwable) {
+      }
     }
   }
 }
